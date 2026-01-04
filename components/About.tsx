@@ -4,53 +4,53 @@ import { Info, BookOpen, CheckCircle2 } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="acerca" className="py-24 bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section id="acerca" className="py-16 md:py-24 bg-white relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
           
-          <div className="relative reveal">
-            <div className="relative z-10 aspect-[4/5] bg-gray-100 rounded-[2.5rem] overflow-hidden shadow-2xl group">
+          <div className="relative reveal order-2 lg:order-1">
+            <div className="relative z-10 aspect-square md:aspect-[4/5] bg-gray-100 rounded-[2rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" 
-                alt="Colaboración académica" 
-                className="object-cover w-full h-full transform transition-transform duration-1000 group-hover:scale-110"
+                src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop" 
+                alt="Libros y educación" 
+                className="object-cover w-full h-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-unison-blue/90 via-transparent to-transparent opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#003B5C]/60 to-transparent"></div>
             </div>
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-unison-blue rounded-3xl rotate-12 -z-0"></div>
+            <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 w-40 h-40 md:w-64 md:h-64 bg-[#003B5C] rounded-3xl rotate-6 -z-10 opacity-10"></div>
           </div>
 
-          <div className="reveal">
-            <div className="flex items-center space-x-2 text-unison-gold mb-4">
+          <div className="reveal order-1 lg:order-2">
+            <div className="flex items-center space-x-2 text-[#FFB81C] mb-4">
               <Info size={24} />
-              <span className="text-sm font-black uppercase tracking-[0.2em]">Introducción</span>
+              <span className="text-xs md:text-sm font-black uppercase tracking-[0.2em]">Introducción</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-serif text-unison-blue mb-8 leading-tight">
-              Un espacio para la <span className="text-unison-gold italic">Reflexión</span> y el Aprendizaje
+            <h2 className="text-3xl md:text-5xl font-serif text-[#003B5C] mb-6 md:mb-8 leading-tight">
+              Excelencia en <span className="text-[#FFB81C] italic">Trabajo Social</span>
             </h2>
             
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Este encuentro representa el compromiso de la Universidad de Sonora con la excelencia en Trabajo Social y Educación, fomentando el diálogo entre la teoría y la práctica profesional.
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+              Este segundo encuentro interdisciplinario es la respuesta de la Universidad de Sonora ante la necesidad de formar profesionales con una visión crítica y humana, capaces de transformar sus comunidades.
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="bg-unison-blue/10 p-2 rounded-lg text-unison-blue">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                <div className="bg-[#003B5C]/10 p-2 rounded-lg text-[#003B5C] shrink-0">
                   <CheckCircle2 size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900">Vinculación Real</h4>
-                  <p className="text-gray-600 text-sm">Conexión directa con dependencias gubernamentales y sociales.</p>
+                  <h4 className="font-bold text-gray-900 text-sm md:text-base">Misión Institucional</h4>
+                  <p className="text-gray-600 text-xs md:text-sm leading-relaxed">Promover la justicia social a través de la educación de calidad.</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="bg-unison-blue/10 p-2 rounded-lg text-unison-blue">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                <div className="bg-[#003B5C]/10 p-2 rounded-lg text-[#003B5C] shrink-0">
                   <CheckCircle2 size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900">Formación Integral</h4>
-                  <p className="text-gray-600 text-sm">Talleres de intervención en crisis y manejo emocional.</p>
+                  <h4 className="font-bold text-gray-900 text-sm md:text-base">Vinculación Estratégica</h4>
+                  <p className="text-gray-600 text-xs md:text-sm leading-relaxed">Conexión directa con organismos de impacto social y comunitario.</p>
                 </div>
               </div>
             </div>
