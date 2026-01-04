@@ -13,6 +13,8 @@
         body {
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
         .font-serif {
             font-family: 'Playfair+Display', serif;
@@ -21,12 +23,10 @@
         .unison-gold { background-color: #FFB81C; }
         .text-unison-blue { color: #003B5C; }
         .text-unison-gold { color: #FFB81C; }
-        .border-unison-gold { border-color: #FFB81C; }
         
-        /* Smooth Scroll */
         html { scroll-behavior: smooth; }
 
-        /* Custom Animations */
+        /* Keyframes para animaciones de entrada */
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -35,10 +35,11 @@
             animation: fadeUp 0.8s ease-out forwards;
         }
 
+        /* Clases para Reveal on Scroll */
         .reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
+            transform: translateY(40px);
+            transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
         }
         .reveal.active {
             opacity: 1;
@@ -47,43 +48,60 @@
 
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
         .animate-float {
-            animation: float 4s ease-in-out infinite;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        /* Loading state */
+        #root:empty::before {
+            content: "Cargando Encuentro...";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #003B5C;
+            font-weight: bold;
+            font-family: serif;
+            font-size: 1.5rem;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
     <script>
-        // Simple scroll reveal logic
-        const observerOptions = {
-            threshold: 0.1
-        };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
+        // Lógica de Scroll Reveal
+        const setupObserver = () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
 
-        window.addEventListener('DOMContentLoaded', () => {
-            const reveals = document.querySelectorAll('.reveal');
-            reveals.forEach(el => observer.observe(el));
-        });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        };
+
+        window.addEventListener('load', setupObserver);
+        // Observar cambios en el DOM para nuevos elementos
+        const mutationObserver = new MutationObserver(setupObserver);
+        mutationObserver.observe(document.getElementById('root'), { childList: true, subtree: true });
     </script>
 </body>
 </html>
