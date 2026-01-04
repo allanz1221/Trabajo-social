@@ -7,57 +7,57 @@ const MapSection: React.FC = () => {
   const directionsUrl = "https://maps.app.goo.gl/P4K9iT8w6h8D9K8C7";
 
   return (
-    <section id="ubicacion" className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+    <section id="ubicacion" className="py-20 md:py-32 bg-[#F9FAFB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="text-center mb-12 reveal">
-          <div className="inline-flex items-center space-x-2 text-[#FFB81C] mb-4">
-            <MapPin size={24} />
-            <span className="text-xs md:text-sm font-bold uppercase tracking-widest">Sede Oficial</span>
+        <div className="text-center mb-16 reveal">
+          <div className="inline-flex items-center space-x-3 text-[#FFB81C] mb-4">
+            <MapPin size={28} />
+            <span className="text-xs md:text-sm font-black uppercase tracking-[0.4em]">Localización Académica</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-serif text-[#003B5C] mb-4">Ubicación del Evento</h2>
-          <p className="text-gray-800 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            Te esperamos en las instalaciones de la Unidad Regional Sur de la Universidad de Sonora, Campus Navojoa.
+          <h2 className="text-4xl md:text-6xl font-serif text-[#003B5C] mb-6">¿Cómo Llegar?</h2>
+          <p className="text-gray-900 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-medium opacity-80 italic">
+            El encuentro se llevará a cabo en las modernas instalaciones de la Unidad Regional Sur de la Universidad de Sonora.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
           <div className="lg:col-span-4 reveal order-2 lg:order-1">
-            <div className="bg-white p-8 rounded-[2rem] border border-gray-200 h-full shadow-md flex flex-col justify-between">
-              <div className="space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#003B5C] text-white p-3 rounded-2xl shrink-0">
-                    <MapPin size={24} />
+            <div className="bg-white p-10 rounded-[3rem] border-2 border-gray-100 h-full shadow-2xl flex flex-col justify-between">
+              <div className="space-y-10">
+                <div className="flex items-start space-x-5 group">
+                  <div className="bg-[#003B5C] text-white p-4 rounded-2xl shadow-lg shrink-0 group-hover:scale-110 transition-transform">
+                    <MapPin size={28} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-1">Dirección</h4>
-                    <p className="text-gray-800 text-sm leading-relaxed">
+                    <h4 className="font-black text-[#003B5C] mb-2 uppercase tracking-tight text-lg">Nuestra Dirección</h4>
+                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-bold opacity-70">
                       Blvd. Lázaro Cárdenas No. 100, Col. Centro, Navojoa, Sonora, C.P. 85800.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#FFB81C] text-[#003B5C] p-3 rounded-2xl shrink-0">
-                    <Info size={24} />
+                <div className="flex items-start space-x-5 group">
+                  <div className="bg-[#FFB81C] text-[#003B5C] p-4 rounded-2xl shadow-lg shrink-0 group-hover:scale-110 transition-transform">
+                    <Info size={28} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-1">Espacios Sede</h4>
-                    <p className="text-gray-800 text-sm leading-relaxed font-medium">
-                      Centro de Convenciones & Gimnasio Universitario.
+                    <h4 className="font-black text-[#003B5C] mb-2 uppercase tracking-tight text-lg">Punto de Encuentro</h4>
+                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-bold opacity-70">
+                      Centro de Convenciones & Gimnasio Universitario UNISON.
                     </p>
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-gray-100">
+                <div className="pt-8 border-t-2 border-gray-100">
                   <a 
                     href={directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-3 w-full py-4 bg-[#003B5C] text-white font-bold rounded-2xl hover:brightness-110 transition-all shadow-lg text-sm uppercase tracking-wider"
+                    className="flex items-center justify-center space-x-4 w-full py-5 bg-[#003B5C] text-white font-black rounded-3xl hover:brightness-110 transition-all shadow-xl text-xs md:text-sm uppercase tracking-widest active:scale-95"
                   >
-                    <Navigation size={18} />
-                    <span>Ver en Google Maps</span>
-                    <ExternalLink size={14} />
+                    <Navigation size={20} className="animate-pulse" />
+                    <span>Iniciar Navegación</span>
+                    <ExternalLink size={16} />
                   </a>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const MapSection: React.FC = () => {
           </div>
 
           <div className="lg:col-span-8 reveal order-1 lg:order-2">
-            <div className="relative rounded-[2rem] overflow-hidden shadow-xl border-4 md:border-8 border-white h-[350px] md:h-[500px]">
+            <div className="relative rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-white h-[400px] md:h-[550px]">
               <iframe
                 src={mapUrl}
                 width="100%"
@@ -74,11 +74,11 @@ const MapSection: React.FC = () => {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="brightness-95 contrast-105"
+                className="brightness-95 contrast-105 grayscale-[20%] hover:grayscale-0 transition-all duration-1000"
               ></iframe>
-              <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full shadow-lg flex items-center space-x-2 text-[10px] font-bold text-[#003B5C] border border-gray-100 uppercase tracking-tighter">
+              <div className="absolute top-6 left-6 bg-[#003B5C] text-white px-6 py-2 rounded-full shadow-2xl flex items-center space-x-3 text-[10px] md:text-xs font-black uppercase tracking-widest border border-white/20">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span>Campus Principal</span>
+                <span>Campus Seguro</span>
               </div>
             </div>
           </div>

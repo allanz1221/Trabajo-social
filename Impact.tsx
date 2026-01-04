@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { IMPACTS } from '../hooks/constants.tsx';
+import { IMPACTS } from './hooks/constants.tsx';
 import { Building2, Globe2, ChevronRight } from 'lucide-react';
 
 const Impact: React.FC = () => {
@@ -13,10 +13,9 @@ const Impact: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          {/* Institutional Impact */}
           <div className="bg-white rounded-[3rem] p-8 md:p-14 reveal border border-gray-200 shadow-xl group hover:-translate-y-2 transition-transform">
             <h3 className="text-2xl md:text-3xl font-black text-[#003B5C] mb-10 uppercase tracking-tighter flex items-center gap-4">
-              <div className="p-4 bg-[#FFB81C] rounded-2xl shadow-lg group-hover:rotate-6 transition-transform">
+              <div className="p-4 bg-[#FFB81C] rounded-2xl shadow-lg">
                 <Building2 className="text-[#003B5C] w-7 h-7 md:w-9 md:h-9" />
               </div>
               {IMPACTS.institutional.title}
@@ -32,14 +31,9 @@ const Impact: React.FC = () => {
               ))}
             </ul>
           </div>
-
-          {/* Social Impact */}
           <div className="bg-[#003B5C] text-white rounded-[3rem] p-8 md:p-14 reveal shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform">
-            <div className="absolute -right-16 -bottom-16 text-white/5 group-hover:scale-125 transition-transform duration-1000">
-               <Globe2 size={300} />
-            </div>
             <h3 className="text-2xl md:text-3xl font-black text-[#FFB81C] mb-10 uppercase tracking-tighter flex items-center gap-4 relative z-10">
-              <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg border border-white/20 group-hover:-rotate-6 transition-transform">
+              <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg border border-white/20">
                 <Globe2 className="w-7 h-7 md:w-9 md:h-9" />
               </div>
               {IMPACTS.social.title}
