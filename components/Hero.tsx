@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/95 via-[#003B5C]/90 to-[#003B5C]/95"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-40 md:pt-48">
         <div className="animate-fade-up">
           <div className="mb-6 inline-block bg-[#FFB81C]/20 backdrop-blur-md border border-[#FFB81C]/40 px-6 py-2 rounded-full text-[#FFB81C] font-black text-[10px] md:text-sm tracking-[0.2em] uppercase shadow-2xl">
             Sede Universidad de Sonora Campus Navojoa

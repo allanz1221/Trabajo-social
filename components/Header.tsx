@@ -25,19 +25,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img 
-              src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
+              src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
               alt="Logotipo Universidad de Sonora" 
               className="h-12 md:h-14 transition-all duration-300"
             />
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg md:text-xl text-[#003B5C]">
-                UNISON
-              </span>
-              <div className="h-0.5 w-full bg-[#FFB81C] rounded-full"></div>
-              <span className="text-[8px] uppercase tracking-[0.2em] font-black text-[#003B5C]">
-                Navojoa
-              </span>
-            </div>
           </div>
 
           <nav className="hidden lg:flex space-x-10">
