@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         
         <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 opacity-80 tracking-[0.4em] uppercase">
-            Trabajo Social Facultad Interdisciplinaria de Ciencias Sociales
+            Licenciatura en Trabajo Social <br />Facultad Interdisciplinaria de Ciencias Sociales
           </h2>
         </div>
         
@@ -62,18 +62,13 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row justify-center gap-5 animate-fade-up px-6" style={{ animationDelay: '1s' }}>
           <a 
-            href="#acerca" 
+            href="#programa" 
             className="group inline-flex items-center justify-center px-10 py-5 bg-[#FFB81C] text-[#003B5C] font-black rounded-full hover:brightness-110 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest text-[11px] w-full sm:w-auto"
           >
-            Explorar Evento
+            Ver Programa
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
           </a>
-          <a 
-            href="#programa" 
-            className="inline-flex items-center justify-center px-10 py-5 bg-white/10 backdrop-blur-md text-white border border-white/30 font-black rounded-full hover:bg-white/20 transition-all transform hover:scale-105 uppercase tracking-widest text-[11px] w-full sm:w-auto"
-          >
-            Ver Programa
-          </a>
+
         </div>
       </div>
       
