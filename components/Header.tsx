@@ -24,8 +24,6 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
-    { name: 'Evento', href: '#acerca' },
-    { name: 'Objetivos', href: '#objetivos' },
     { name: 'Programa', href: '#programa' },
     { name: 'Sede', href: '#ubicacion' },
   ];
@@ -36,7 +34,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img 
-              src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
+              src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
               alt="Logotipo Universidad de Sonora" 
               className={`h-12 md:h-14 transition-all duration-300 ${!scrolled ? 'brightness-0 invert' : ''}`}
             />
