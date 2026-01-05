@@ -3,8 +3,8 @@ import React from 'react';
 import { MapPin, Navigation, Info, ExternalLink } from 'lucide-react';
 
 const MapSection: React.FC = () => {
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11520.457859345388!2d-109.4398188179269!3d27.078427951336423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba6113b69416b5%3A0xc6668740c030d322!2sUniversidad%20de%20Sonora%2C%20Unidad%20Regional%20Sur!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx";
-  const directionsUrl = "https://maps.app.goo.gl/P4K9iT8w6h8D9K8C7";
+  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.2996381580708!2d-109.42922140763878!3d27.074394045283917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b81b1e5c3a6e91%3A0x92c7b7444828e1f6!2sUniversidad%20de%20Sonora%20URS%20(Unison)!5e0!3m2!1ses!2smx!4v1767623480313!5m2!1ses!2smx";
+  const directionsUrl = "https://maps.app.goo.gl/EyB2R5EWbe9eWj1s9";
 
   return (
     <section id="ubicacion" className="py-20 md:py-32 bg-[#F1F5F9] relative overflow-hidden">
