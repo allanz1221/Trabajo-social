@@ -8,7 +8,8 @@ import {
   HeartHandshake, 
   Globe 
 } from 'lucide-react';
-import { Objective, ProgramDay, ImpactItem } from './types';
+// Fix: Corrected relative path to types.ts at root
+import { Objective, ProgramDay } from '../types';
 
 export const OBJECTIVES: Objective[] = [
   { id: 1, text: "Fortalecer la identidad y el sentido de pertenencia profesional de las y los estudiantes de la Licenciatura en Trabajo Social." },
@@ -17,27 +18,6 @@ export const OBJECTIVES: Objective[] = [
   { id: 4, text: "Impulsar el desarrollo de competencias socioemocionales, particularmente el manejo de crisis y de las emociones, fundamentales para la intervención social." },
   { id: 5, text: "Favorecer la articulación entre la teoría y la práctica, contribuyendo a una formación crítica, reflexiva y socialmente comprometida." }
 ];
-
-export const IMPACTS: { institutional: ImpactItem; social: ImpactItem } = {
-  institutional: {
-    title: "Impacto Institucional",
-    points: [
-      "Fortalecimiento de la calidad académica mediante la incorporación de espacios de reflexión crítica.",
-      "Consolidación de la vinculación interinstitucional con dependencias gubernamentales y organismos sociales.",
-      "Impulso al trabajo colaborativo entre campus (Navojoa y Hermosillo), favoreciendo la integración académica.",
-      "Posicionamiento de la Universidad de Sonora como una institución comprometida con la formación ética e inclusiva."
-    ]
-  },
-  social: {
-    title: "Impacto Social",
-    points: [
-      "Sensibilización del estudiantado ante la diversidad social, cultural y humana.",
-      "Fortalecimiento de prácticas de intervención social orientadas a la equidad y la justicia social.",
-      "Mejora de la atención brindada por futuras y futuros profesionales en instituciones públicas y comunitarias.",
-      "Generación de propuestas y reflexiones que contribuyen a la transformación social y al bienestar comunitario."
-    ]
-  }
-};
 
 export const PROGRAM: ProgramDay[] = [
   {
@@ -111,6 +91,28 @@ export const PROGRAM: ProgramDay[] = [
     ]
   }
 ];
+
+// Fix: Added missing IMPACTS constant to support the Impact components
+export const IMPACTS = {
+  institutional: {
+    title: "Trascendencia Institucional",
+    points: [
+      "Fortalecimiento de la identidad de la Licenciatura en Trabajo Social.",
+      "Consolidación de vínculos con instituciones gubernamentales y sociales.",
+      "Actualización de las prácticas de intervención desde la academia.",
+      "Proyección de excelencia de la UNISON en el Noroeste del país."
+    ]
+  },
+  social: {
+    title: "Compromiso Social",
+    points: [
+      "Implementación de estrategias de intervención en contextos reales.",
+      "Atención directa a problemáticas sociales en la región del Mayo.",
+      "Fomento de una cultura de paz y bienestar comunitario.",
+      "Empoderamiento de actores sociales mediante procesos organizativos."
+    ]
+  }
+};
 
 export const ICONS = {
   Users: <Users className="w-6 h-6" />,

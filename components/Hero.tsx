@@ -16,13 +16,13 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-24">
         <div className="animate-fade-up">
           <div className="mb-6 inline-block bg-[#FFB81C]/20 backdrop-blur-md border border-[#FFB81C]/40 px-6 py-2 rounded-full text-[#FFB81C] font-black text-[10px] md:text-sm tracking-[0.2em] uppercase shadow-2xl">
-            Universidad de Sonora Campus Navojoa
+            Sede Universidad de Sonora Campus Navojoa
           </div>
         </div>
         
         <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 opacity-80 tracking-[0.4em] uppercase">
-            Trabajo Social & Educación
+            Trabajo Social facultad interdisciplinaria de Ciencias Sociales
           </h2>
         </div>
         

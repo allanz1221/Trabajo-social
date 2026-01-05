@@ -7,7 +7,7 @@ const MapSection: React.FC = () => {
   const directionsUrl = "https://maps.app.goo.gl/P4K9iT8w6h8D9K8C7";
 
   return (
-    <section id="ubicacion" className="py-20 md:py-32 bg-[#F9FAFB] relative overflow-hidden">
+    <section id="ubicacion" className="py-20 md:py-32 bg-[#F1F5F9] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-16 reveal">
           <div className="inline-flex items-center space-x-3 text-[#FFB81C] mb-4">
@@ -15,7 +15,7 @@ const MapSection: React.FC = () => {
             <span className="text-xs md:text-sm font-black uppercase tracking-[0.4em]">Localización Académica</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-serif text-[#003B5C] mb-6">¿Cómo Llegar?</h2>
-          <p className="text-gray-900 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-medium opacity-80 italic">
+          <p className="text-[#003B5C] text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-bold opacity-90 italic">
             El encuentro se llevará a cabo en las modernas instalaciones de la Unidad Regional Sur de la Universidad de Sonora.
           </p>
         </div>
@@ -30,7 +30,7 @@ const MapSection: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-black text-[#003B5C] mb-2 uppercase tracking-tight text-lg">Nuestra Dirección</h4>
-                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-bold opacity-70">
+                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-black opacity-80">
                       Blvd. Lázaro Cárdenas No. 100, Col. Centro, Navojoa, Sonora, C.P. 85800.
                     </p>
                   </div>
@@ -42,7 +42,7 @@ const MapSection: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-black text-[#003B5C] mb-2 uppercase tracking-tight text-lg">Punto de Encuentro</h4>
-                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-bold opacity-70">
+                    <p className="text-gray-900 text-sm md:text-base leading-relaxed font-black opacity-80">
                       Centro de Convenciones & Gimnasio Universitario UNISON.
                     </p>
                   </div>

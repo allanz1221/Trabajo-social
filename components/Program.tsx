@@ -23,7 +23,7 @@ const Program: React.FC = () => {
               className={`px-6 md:px-10 py-3 md:py-4 rounded-2xl text-[10px] md:text-xs font-black tracking-widest transition-all shadow-md active:scale-95 ${
                 activeTab === day.id 
                   ? 'bg-[#003B5C] text-white border-b-4 border-[#FFB81C]' 
-                  : 'bg-white text-gray-500 hover:bg-gray-50 border border-gray-200'
+                  : 'bg-white text-[#003B5C] hover:bg-gray-50 border border-gray-200'
               }`}
             >
               {day.id === 'thursday' ? 'DÍA 01' : day.id === 'friday' ? 'DÍA 02' : 'DÍA 03'}
@@ -36,8 +36,8 @@ const Program: React.FC = () => {
           
           <div className="mb-12 pb-8 border-b-2 border-gray-200">
             <h3 className="text-3xl md:text-4xl font-serif text-[#003B5C] mb-2">{currentDay?.date}</h3>
-            <div className="flex items-center gap-2 text-[#FFB81C] font-black uppercase text-xs md:text-sm tracking-widest">
-              <ChevronRight size={18} />
+            <div className="flex items-center gap-2 text-[#003B5C] font-black uppercase text-xs md:text-sm tracking-widest">
+              <ChevronRight size={18} className="text-[#FFB81C]" />
               <span>{currentDay?.theme}</span>
             </div>
           </div>
@@ -62,12 +62,12 @@ const Program: React.FC = () => {
                     </div>
                   )}
                   {act.location && (
-                    <div className="text-gray-900 text-xs md:text-sm mb-4 flex items-center gap-2 font-bold opacity-60">
+                    <div className="text-gray-900 text-xs md:text-sm mb-4 flex items-center gap-2 font-bold opacity-80">
                       <MapPin size={16} className="text-[#FFB81C]" /> {act.location}
                     </div>
                   )}
                   {act.description && (
-                    <p className="text-gray-900 text-sm md:text-lg leading-relaxed mb-6 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm font-medium">
+                    <p className="text-gray-900 text-sm md:text-lg leading-relaxed mb-6 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm font-semibold">
                       {act.description}
                     </p>
                   )}
@@ -75,8 +75,8 @@ const Program: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                       {act.details.map((detail, dIdx) => (
                         <div key={dIdx} className="text-xs md:text-sm text-gray-900 bg-white p-4 rounded-2xl border border-gray-200 flex items-center gap-4 shadow-sm group/item hover:border-[#FFB81C] transition-colors">
-                          <div className="w-2 h-2 rounded-full bg-[#FFB81C] shrink-0 group-hover/item:scale-150 transition-transform"></div>
-                          <span className="font-bold opacity-80 leading-snug">{detail}</span>
+                          <div className="w-2.5 h-2.5 rounded-full bg-[#FFB81C] shrink-0 group-hover/item:scale-150 transition-transform"></div>
+                          <span className="font-bold opacity-90 leading-snug">{detail}</span>
                         </div>
                       ))}
                     </div>

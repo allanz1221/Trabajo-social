@@ -31,15 +31,6 @@ const About: React.FC = () => {
               <span className="text-xs md:text-sm font-black uppercase tracking-[0.3em]">Naturaleza del Evento</span>
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-serif text-[#003B5C] mb-8 leading-tight">
-              Excelencia en <br />
-              <span className="text-[#FFB81C] italic">Formación Social</span>
-            </h2>
-            
-            <p className="text-gray-900 text-base md:text-xl leading-relaxed mb-10 font-medium opacity-80 border-l-4 border-[#FFB81C] pl-6">
-              El II Encuentro Interdisciplinario consolida a la Universidad de Sonora como el eje del pensamiento crítico y la acción social en el sur del estado, vinculando la teoría con los desafíos de la realidad sonorense.
-            </p>
-
             <div className="space-y-6">
               <div className="flex items-start space-x-5 p-6 rounded-3xl bg-white border border-gray-200 shadow-sm group hover:shadow-md transition-all">
                 <div className="bg-[#003B5C] text-white p-3 rounded-2xl shrink-0 group-hover:scale-110 transition-transform">

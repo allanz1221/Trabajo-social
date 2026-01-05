@@ -19,8 +19,3 @@ export interface Objective {
   id: number;
   text: string;
 }
-
-export interface ImpactItem {
-  title: string;
-  points: string[];
-}

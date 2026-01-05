@@ -16,10 +16,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20 border-b border-white/10 pb-20">
           
           <div className="space-y-8">
-            <div className="flex flex-col group cursor-pointer">
-              <span className="font-serif font-black text-4xl group-hover:text-[#FFB81C] transition-colors">UNISON</span>
-              <div className="h-1.5 w-16 bg-[#FFB81C] rounded-full my-1"></div>
-              <span className="text-[#FFB81C] text-xs uppercase tracking-[0.4em] font-black">Campus Navojoa</span>
+            <div className="flex items-center space-x-4 group cursor-pointer">
+              <img 
+                src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
+                alt="Logo UNISON" 
+                className="h-16 md:h-20 brightness-0 invert transition-transform group-hover:scale-105"
+              />
+              <div className="flex flex-col group cursor-pointer">
+                <span className="font-serif font-black text-3xl group-hover:text-[#FFB81C] transition-colors">UNISON</span>
+                <div className="h-1.5 w-full bg-[#FFB81C] rounded-full my-1"></div>
+                <span className="text-[#FFB81C] text-[10px] uppercase tracking-[0.4em] font-black">Campus Navojoa</span>
+              </div>
             </div>
             <p className="text-white/80 text-sm md:text-base leading-relaxed font-medium">
               El II Encuentro de Trabajo Social es un espacio académico vital para la reflexión, el aprendizaje y la transformación social en el Noroeste de México.

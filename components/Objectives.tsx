@@ -32,7 +32,6 @@ const Objectives: React.FC = () => {
               </div>
               <h4 className="text-[#003B5C] font-black text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
                 <Sparkles size={14} className="text-[#FFB81C]" />
-                Objetivo
               </h4>
               <p className="text-gray-900 leading-relaxed font-bold text-sm md:text-lg">
                 {obj.text}
