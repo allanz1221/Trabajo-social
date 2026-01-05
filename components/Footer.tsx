@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <div className="space-y-8">
             <div className="flex items-center space-x-4 group cursor-pointer">
               <img 
-                src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
+                src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
                 alt="Logo UNISON" 
                 className="h-16 md:h-20 brightness-0 invert transition-transform group-hover:scale-105"
               />
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-[#FFB81C] group-hover:text-[#003B5C] transition-all">
                   <Mail size={22} />
                 </div>
-                <span className="font-bold text-sm md:text-base group-hover:translate-x-2 transition-transform">contacto@navojoa.unison.mx</span>
+                <span className="font-bold text-sm md:text-base group-hover:translate-x-2 transition-transform">lilia.anaya@unison.mx</span>
               </li>
               <li className="flex items-center space-x-4 text-white group cursor-pointer">
                 <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-[#FFB81C] group-hover:text-[#003B5C] transition-all">
@@ -61,9 +61,9 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="https://sociales.unison.mx" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-white/70 hover:text-[#FFB81C] transition-all font-bold group">
+                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-white/70 hover:text-[#FFB81C] transition-all font-bold group">
                   <ExternalLink size={18} className="group-hover:rotate-12 transition-transform" />
-                  <span className="text-sm md:text-base">División de Ciencias Sociales</span>
+                  <span className="text-sm md:text-base">Departamento de Ciencias Sociales</span>
                 </a>
               </li>
               <li>
