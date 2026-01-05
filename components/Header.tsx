@@ -4,15 +4,6 @@ import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -29,21 +20,21 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-white shadow-xl py-3' : 'bg-transparent py-5 md:py-8'}`}>
+    <header className="fixed w-full z-[100] bg-white shadow-lg py-3 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img 
-              src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
+              src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
               alt="Logotipo Universidad de Sonora" 
-              className={`h-12 md:h-14 transition-all duration-300 ${!scrolled ? 'brightness-0 invert' : ''}`}
+              className="h-12 md:h-14 transition-all duration-300"
             />
             <div className="flex flex-col">
-              <span className={`font-serif font-bold text-lg md:text-xl transition-colors duration-300 ${scrolled ? 'text-[#003B5C]' : 'text-white'}`}>
+              <span className="font-serif font-bold text-lg md:text-xl text-[#003B5C]">
                 UNISON
               </span>
               <div className="h-0.5 w-full bg-[#FFB81C] rounded-full"></div>
-              <span className={`text-[8px] uppercase tracking-[0.2em] font-black ${scrolled ? 'text-[#003B5C]' : 'text-[#FFB81C]'}`}>
+              <span className="text-[8px] uppercase tracking-[0.2em] font-black text-[#003B5C]">
                 Navojoa
               </span>
             </div>
@@ -54,7 +45,7 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-[11px] font-black uppercase tracking-widest transition-all duration-300 hover:text-[#FFB81C] relative group ${scrolled ? 'text-[#003B5C]' : 'text-white'}`}
+                className="text-[11px] font-black uppercase tracking-widest transition-all duration-300 hover:text-[#FFB81C] relative group text-[#003B5C]"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FFB81C] transition-all duration-300 group-hover:w-full"></span>
@@ -65,7 +56,7 @@ const Header: React.FC = () => {
           <div className="lg:hidden relative z-[110]">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2.5 rounded-full transition-all shadow-lg ${isOpen ? 'bg-[#FFB81C] text-[#003B5C]' : (scrolled ? 'bg-[#003B5C] text-white' : 'bg-white/20 backdrop-blur-md text-white border border-white/30')}`}
+              className={`p-2.5 rounded-full transition-all shadow-lg ${isOpen ? 'bg-[#FFB81C] text-[#003B5C]' : 'bg-[#003B5C] text-white'}`}
               aria-label="Menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}

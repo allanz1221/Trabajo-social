@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
         <div className="text-center pt-8">
           <div className="inline-flex items-center space-x-4 mb-6">
             <div className="h-[1px] w-8 md:w-16 bg-[#FFB81C]/40"></div>
-            <p className="text-[#FFB81C] text-[10px] md:text-xs font-black uppercase tracking-[0.5em]">El saber de mis hijos hará mi gloria</p>
+            <p className="text-[#FFB81C] text-[10px] md:text-xs font-black uppercase tracking-[0.5em]">El saber de mis hijos hará mi grandeza</p>
             <div className="h-[1px] w-8 md:w-16 bg-[#FFB81C]/40"></div>
           </div>
           <p className="text-white/40 text-[9px] md:text-[11px] font-bold uppercase tracking-widest">

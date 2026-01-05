@@ -5,12 +5,13 @@ import { Calendar, MapPin, Users, ArrowRight } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="inicio" className="relative h-[95vh] md:h-screen min-h-[580px] flex items-center justify-center overflow-hidden">
-      {/* Symbolic Academic Architecture Background */}
+      {/* Background Image: Social Work / Professional Interaction */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[20000ms] scale-110"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541339907198-e08759df9a13?q=80&w=2070&auto=format&fit=crop')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/95 via-[#003B5C]/80 to-[#003B5C]/95"></div>
+        {/* Predominant Blue Overlay - Tenue (Subtle) Image Visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/95 via-[#003B5C]/90 to-[#003B5C]/95"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-24">
