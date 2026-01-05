@@ -69,9 +69,9 @@ const Header: React.FC = () => {
         <div className="w-full max-w-sm flex flex-col items-center space-y-8">
           <div className="text-center mb-8">
             <img 
-              src="https://www.unison.mx/wp-content/themes/unison/img/unison-logo.png" 
+              src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
               alt="Logo UNISON" 
-              className="h-20 mx-auto mb-6 brightness-0 invert"
+              className="h-20 mx-auto mb-6"
             />
             <span className="text-[#FFB81C] font-serif text-5xl block mb-2">II Encuentro</span>
             <div className="h-1 w-24 bg-[#FFB81C] mx-auto rounded-full mb-4"></div>

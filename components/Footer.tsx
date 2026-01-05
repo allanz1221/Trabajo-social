@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               <img 
                 src="https://i.ibb.co/Z653QdBg/Nice-Png-feliz-ao-nuevo-2017-4124259.png" 
                 alt="Logo UNISON" 
-                className="h-16 md:h-20 brightness-0 invert transition-transform group-hover:scale-105"
+                className="h-16 md:h-20 transition-transform group-hover:scale-105"
               />
               <div className="flex flex-col group cursor-pointer">
                 <span className="font-serif font-black text-3xl group-hover:text-[#FFB81C] transition-colors">UNISON</span>
