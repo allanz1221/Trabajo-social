@@ -23,14 +23,14 @@ const Hero: React.FC = () => {
         
         <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 opacity-80 tracking-[0.4em] uppercase">
-            Licenciatura en Trabajo Social <br />Facultad Interdisciplinaria de Ciencias Sociales
+            Facultad Interdisciplinaria de Ciencias Sociales <br />Departamento de Ciencias Sociales campus Navojoa invitan al 
           </h2>
         </div>
         
         <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
           <h1 className="font-serif text-5xl md:text-8xl lg:text-9xl mb-8 leading-[1.1] text-white drop-shadow-lg">
             II Encuentro <br />
-            <span className="text-[#FFB81C] italic">Interdisciplinario</span>
+            <span className="text-[#FFB81C] italic">Interdisciplinario de Trabajo Social</span>
           </h1>
         </div>
         
