@@ -5,25 +5,24 @@ import { Calendar, MapPin, Users, ArrowRight } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="inicio" className="relative h-[95vh] md:h-screen min-h-[580px] flex items-center justify-center overflow-hidden">
-      {/* Background Image: Social Work / Professional Interaction */}
+      {/* Background Image: Mural Vitral Universidad de Sonora */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[20000ms] scale-110"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop')" }}
+        style={{ backgroundImage: "url('https://archivogeneral.unison.mx/wp-content/uploads/2023/10/Vitral-Rector%C3%ADa-768x449.jpg')" }}
       >
-        {/* Predominant Blue Overlay - Tenue (Subtle) Image Visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/95 via-[#003B5C]/90 to-[#003B5C]/95"></div>
+        {/* Predominant Blue Overlay - Reduced opacity to make the stained glass visible */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/80 via-[#003B5C]/40 to-[#003B5C]/90"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-40 md:pt-48">
         <div className="animate-fade-up">
-          <div className="mb-6 inline-block bg-[#FFB81C]/20 backdrop-blur-md border border-[#FFB81C]/40 px-6 py-2 rounded-full text-[#FFB81C] font-black text-[10px] md:text-sm tracking-[0.2em] uppercase shadow-2xl">
+          <div className="mb-6 inline-block bg-[#FFB81C]/90 backdrop-blur-md border border-[#FFB81C] px-6 py-2 rounded-full text-[#003B5C] font-black text-[10px] md:text-sm tracking-[0.2em] uppercase shadow-2xl">
             Sede Universidad de Sonora Campus Navojoa
           </div>
-          
         </div>
         
         <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 opacity-80 tracking-[0.4em] uppercase">
+          <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 drop-shadow-md tracking-[0.4em] uppercase bg-[#003B5C]/30 inline-block px-4 py-1 rounded-lg backdrop-blur-sm">
             Facultad Interdisciplinaria de Ciencias Sociales <br />Departamento de Ciencias Sociales campus Navojoa 
             <br />Departamento de Trabajo Social campus Hermosillo <br /><br />
              <span className="text-[#FFB81C] italic">invitan al </span>
@@ -31,34 +30,34 @@ const Hero: React.FC = () => {
         </div>
         
         <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
-          <h1 className="font-serif text-5xl md:text-8xl lg:text-9xl mb-8 leading-[1.1] text-white drop-shadow-lg">
+          <h1 className="font-serif text-5xl md:text-8xl lg:text-9xl mb-8 leading-[1.1] text-white drop-shadow-2xl shadow-black">
             II Encuentro <br />
-            <span className="text-[#FFB81C] italic">Interdisciplinario de Trabajo Social</span>
+            <span className="text-[#FFB81C] italic drop-shadow-md">Interdisciplinario de Trabajo Social</span>
           </h1>
         </div>
         
         <div className="animate-fade-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-white text-sm md:text-2xl max-w-3xl mx-auto mb-12 font-light leading-relaxed opacity-90 px-4 italic">
+          <p className="text-white text-sm md:text-2xl max-w-3xl mx-auto mb-12 font-medium leading-relaxed drop-shadow-lg px-4 italic bg-[#003B5C]/20 rounded-xl py-2 backdrop-blur-sm">
             “Prácticas en contextos de diversidad, desafíos y transformación social”
           </p>
         </div>
 
         <div className="grid grid-cols-3 gap-3 md:gap-8 max-w-4xl mx-auto mb-14 animate-fade-up" style={{ animationDelay: '0.8s' }}>
-          <div className="bg-white/5 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/10 shadow-xl group hover:border-[#FFB81C]/50 transition-all">
+          <div className="bg-[#003B5C]/60 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/20 shadow-xl group hover:border-[#FFB81C]/50 transition-all hover:bg-[#003B5C]/80">
             <Calendar className="text-[#FFB81C] mx-auto mb-2 md:mb-4 w-6 h-6 md:w-10 md:h-10 animate-float" />
-            <p className="text-white font-black text-[10px] md:text-xl">29-31</p>
+            <p className="text-white font-black text-[10px] md:text-xl drop-shadow-md">29-31</p>
             <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest">Enero 2026</p>
           </div>
           
-          <div className="bg-white/5 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/10 shadow-xl group hover:border-[#FFB81C]/50 transition-all">
+          <div className="bg-[#003B5C]/60 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/20 shadow-xl group hover:border-[#FFB81C]/50 transition-all hover:bg-[#003B5C]/80">
             <MapPin className="text-[#FFB81C] mx-auto mb-2 md:mb-4 w-6 h-6 md:w-10 md:h-10 animate-float" style={{ animationDelay: '0.5s' }} />
-            <p className="text-white font-black text-[10px] md:text-xl uppercase">Campus</p>
+            <p className="text-white font-black text-[10px] md:text-xl uppercase drop-shadow-md">Campus</p>
             <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest">Navojoa</p>
           </div>
           
-          <div className="bg-white/5 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/10 shadow-xl group hover:border-[#FFB81C]/50 transition-all">
+          <div className="bg-[#003B5C]/60 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/20 shadow-xl group hover:border-[#FFB81C]/50 transition-all hover:bg-[#003B5C]/80">
             <Users className="text-[#FFB81C] mx-auto mb-2 md:mb-4 w-6 h-6 md:w-10 md:h-10 animate-float" style={{ animationDelay: '1s' }} />
-            <p className="text-white font-black text-[10px] md:text-xl uppercase">Abierto</p>
+            <p className="text-white font-black text-[10px] md:text-xl uppercase drop-shadow-md">Abierto</p>
             <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest">Registro</p>
           </div>
         </div>
@@ -66,12 +65,11 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-5 animate-fade-up px-6" style={{ animationDelay: '1s' }}>
           <a 
             href="#programa" 
-            className="group inline-flex items-center justify-center px-10 py-5 bg-[#FFB81C] text-[#003B5C] font-black rounded-full hover:brightness-110 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest text-[11px] w-full sm:w-auto"
+            className="group inline-flex items-center justify-center px-10 py-5 bg-[#FFB81C] text-[#003B5C] font-black rounded-full hover:brightness-110 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest text-[11px] w-full sm:w-auto border-2 border-[#FFB81C]"
           >
             Ver Programa
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
           </a>
-
         </div>
       </div>
       

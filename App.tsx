@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header.tsx';
 import Hero from './components/Hero.tsx';
+import Countdown from './components/Countdown.tsx';
 import Program from './components/Program.tsx';
 import MapSection from './components/MapSection.tsx';
 import Footer from './components/Footer.tsx';
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Countdown />
         <Program />
         <MapSection />
       </main>
