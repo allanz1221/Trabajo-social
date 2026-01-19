@@ -10,8 +10,8 @@ const Hero: React.FC = () => {
         className="absolute inset-0 z-0 bg-cover bg-top transition-transform duration-[20000ms] scale-110"
         style={{ backgroundImage: "url('https://archivogeneral.unison.mx/wp-content/uploads/2023/10/Vitral-Rector%C3%ADa-768x449.jpg')" }}
       >
-        {/* Predominant Blue Overlay - Reduced opacity to make the stained glass visible */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/80 via-[#003B5C]/40 to-[#003B5C]/90"></div>
+        {/* Predominant Blue Overlay - Increased opacity to improve text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/90 via-[#003B5C]/75 to-[#003B5C]/95"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-40 md:pt-60 pb-12 md:pb-32">
