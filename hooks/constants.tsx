@@ -76,7 +76,9 @@ export const PROGRAM: ProgramDay[] = [
       title: "Concierto de voz y piano UNIVERSIDAD DE SONORA, Bellas artes.",
               location: "Templo de la Purisima Concepción, Álamos, Son."
 
-      }
+      },
+    { time: "21:00 h", title: "Regreso a Navojoa" },
+
     ]
   },
   {
