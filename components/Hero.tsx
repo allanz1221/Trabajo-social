@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       {/* Background Image: Mural Vitral Universidad de Sonora */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-top transition-transform duration-[20000ms] scale-110"
-        style={{ backgroundImage: "url('https://archivogeneral.unison.mx/wp-content/uploads/2023/10/Vitral-Rector%C3%ADa-768x449.jpg')" }}
+        style={{ backgroundImage: "url('https://i.ibb.co/pDYJbLk/IMG-20260118-WA0007.jpg')" }}
       >
         {/* Predominant Blue Overlay - Increased opacity to improve text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/90 via-[#003B5C]/75 to-[#003B5C]/95"></div>
