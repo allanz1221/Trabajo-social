@@ -4,10 +4,10 @@ import { Calendar, MapPin, Users, ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative h-[95vh] md:h-auto md:min-h-screen flex items-center md:items-start justify-center overflow-hidden">
+    <section id="inicio" className="relative h-[95vh] md:h-auto md:min-h-screen flex items-center md:items-start justify-center overflow-hidden bg-[#003B5C]">
       {/* Background Image: Mural Vitral Universidad de Sonora */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: "url('https://i.ibb.co/pDYJbLk/IMG-20260118-WA0007.jpg')" }}
       >
         {/* Predominant Blue Overlay - Increased opacity to improve text readability */}
