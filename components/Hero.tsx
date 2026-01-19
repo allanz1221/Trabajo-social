@@ -4,17 +4,17 @@ import { Calendar, MapPin, Users, ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative h-[95vh] md:h-screen min-h-[580px] flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative h-[95vh] md:h-auto md:min-h-screen flex items-center md:items-start justify-center overflow-hidden">
       {/* Background Image: Mural Vitral Universidad de Sonora */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[20000ms] scale-110"
+        className="absolute inset-0 z-0 bg-cover bg-top transition-transform duration-[20000ms] scale-110"
         style={{ backgroundImage: "url('https://archivogeneral.unison.mx/wp-content/uploads/2023/10/Vitral-Rector%C3%ADa-768x449.jpg')" }}
       >
         {/* Predominant Blue Overlay - Reduced opacity to make the stained glass visible */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#003B5C]/80 via-[#003B5C]/40 to-[#003B5C]/90"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-40 md:pt-48">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-40 md:pt-60 pb-12 md:pb-32">
         <div className="animate-fade-up">
           <div className="mb-6 inline-block bg-[#FFB81C]/90 backdrop-blur-md border border-[#FFB81C] px-6 py-2 rounded-full text-[#003B5C] font-black text-[10px] md:text-sm tracking-[0.2em] uppercase shadow-2xl">
             Sede Universidad de Sonora Campus Navojoa
@@ -55,11 +55,11 @@ const Hero: React.FC = () => {
             <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest">Navojoa</p>
           </div>
           
-          <div className="bg-[#003B5C]/60 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/20 shadow-xl group hover:border-[#FFB81C]/50 transition-all hover:bg-[#003B5C]/80">
+          <a href="#registro" className="block bg-[#003B5C]/60 backdrop-blur-md p-4 md:p-8 rounded-3xl border border-white/20 shadow-xl group hover:border-[#FFB81C]/50 transition-all hover:bg-[#003B5C]/80 cursor-pointer">
             <Users className="text-[#FFB81C] mx-auto mb-2 md:mb-4 w-6 h-6 md:w-10 md:h-10 animate-float" style={{ animationDelay: '1s' }} />
             <p className="text-white font-black text-[10px] md:text-xl uppercase drop-shadow-md">Abierto</p>
-            <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest">Registro</p>
-          </div>
+            <p className="text-[#FFB81C] text-[8px] md:text-xs font-bold uppercase tracking-widest group-hover:underline">Registro</p>
+          </a>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-5 animate-fade-up px-6" style={{ animationDelay: '1s' }}>

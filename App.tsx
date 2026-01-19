@@ -4,6 +4,7 @@ import Header from './components/Header.tsx';
 import Hero from './components/Hero.tsx';
 import Countdown from './components/Countdown.tsx';
 import Program from './components/Program.tsx';
+import Registration from './components/Registration.tsx';
 import MapSection from './components/MapSection.tsx';
 import Footer from './components/Footer.tsx';
 import { useReveal } from './hooks/useReveal.ts';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Hero />
         <Countdown />
         <Program />
+        <Registration />
         <MapSection />
       </main>
       <Footer />
