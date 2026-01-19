@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
         <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-white text-[10px] md:text-xl font-medium mb-4 opacity-80 tracking-[0.4em] uppercase">
             Facultad Interdisciplinaria de Ciencias Sociales <br />Departamento de Ciencias Sociales campus Navojoa 
-            <br />Departamento de Trabajo Social campus Hermosillo <br />
-            invitan al 
+            <br />Departamento de Trabajo Social campus Hermosillo <br /><br />
+             <span className="text-[#FFB81C] italic">invitan al </span>
           </h2>
         </div>
         

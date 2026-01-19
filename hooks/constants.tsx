@@ -37,14 +37,13 @@ export const PROGRAM: ProgramDay[] = [
           "ISTESSON, Hospital General – CISAME, Seguridad Pública."
         ]
       },
+      { time: "12:30 h", title: "Presentación Mariachi UNISON" },
       { 
-        time: "12:30 – 14:00 h", 
+        time: "13:00 – 14:30 h", 
         title: "Taller: Intervención en crisis y manejo de emociones",
         speaker: "Mtra. Migdalia Valenzuela Noriega"
       },
-      { time: "14:00 h", title: "Cierre de actividades del día" },
-      { time: "15:30 h", title: "Traslado a Álamos, Sonora", description: "Evento cultural: Noche de Gala UNISON." },
-      { time: "21:00 h", title: "Regreso a Navojoa" }
+      { time: "14:30 h", title: "Cierre de actividades del día" }
     ]
   },
   {
@@ -54,8 +53,11 @@ export const PROGRAM: ProgramDay[] = [
     activities: [
       { 
         time: "09:30 – 10:30 h", 
-        title: "Conferencia (Virtual): Gestión de proyectos y procesos de organización social",
-        description: "Enfoque en el profesional del Trabajo Social."
+        title: "Conferencia: Invstigación en trabajo social juridico como herramienta de transformación social en contextos de diversidad",
+        speaker: "Dra. Marisela Rivera Montoya",
+        description: "Enfoque en el profesional del Trabajo Social.",
+        location: "Centro de Convenciones, Campus Navojoa"
+
       },
       { 
         time: "10:30 – 12:00 h", 
@@ -67,6 +69,13 @@ export const PROGRAM: ProgramDay[] = [
           "Análisis crítico y aprendizaje colectivo."
         ],
         location: "Centro de Convenciones, Campus Navojoa"
+      },
+    { time: "12:00 h", title: "Cierre de actividades académicas" },
+    { time: "14:00 h", title: "Translado a la Cd. de Álamos" },
+    { time: "16:00 h", 
+      title: "Concierto de voz y piano UNIVERSIDAD DE SONORA, Bellas artes.",
+              location: "Templo de la Purisima Concepción, Álamos, Son."
+
       }
     ]
   },
