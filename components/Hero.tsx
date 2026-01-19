@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <section id="inicio" className="relative h-[95vh] md:h-auto md:min-h-screen flex items-center md:items-start justify-center overflow-hidden">
       {/* Background Image: Mural Vitral Universidad de Sonora */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-top transition-transform duration-[20000ms] scale-110"
+        className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://i.ibb.co/pDYJbLk/IMG-20260118-WA0007.jpg')" }}
       >
         {/* Predominant Blue Overlay - Increased opacity to improve text readability */}
