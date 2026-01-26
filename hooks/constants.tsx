@@ -27,8 +27,14 @@ export const PROGRAM: ProgramDay[] = [
     activities: [
       { time: "10:00 h", title: "Bienvenida oficial", location: "Centro de Convenciones, Campus Navojoa" },
       { time: "10:30 – 11:00 h", title: "Presentación cultural: Danza del Venado" },
+      { time: "11:00 – 11:40 h", 
+          title: "Conferencia: Trabajo Social y Tecnologías de la información y Comunicación", 
+          speaker: "Mtro. Leví Calderón Clemente",
+          location: "Modalidad: Virtual, Proyectado en el Centro de Convenciones, Campus Navojoa"
+           },
+
       { 
-        time: "11:00 – 12:30 h", 
+        time: "11:40 – 12:30 h", 
         title: "Encuentro de intercambio de experiencias: Proyectos en el sector gubernamental",
         description: "Participación de estudiantes, egresados y directivos.",
         details: [
